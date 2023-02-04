@@ -25,7 +25,8 @@ const Navbar = () => {
 
       <Menu theme="dark">
         <Menu.Item key="1" icon={<HomeOutlined />}>
-          <Link to="/">Home</Link>
+          <Link to="/">Home test
+          </Link>
         </Menu.Item>
         <Menu.Item key="2" icon={<FundOutlined />}>
           <Link to="/cryptocurrencies">Cryptocurrencies</Link>
