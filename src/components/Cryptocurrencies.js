@@ -15,7 +15,6 @@ const Cryptocurrencies = ({ simplified }) => {
     const filteredData = cryptoList?.data?.coins.filter((coin) =>
       coin.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    console.log(filteredData);
     setCryptos(filteredData);
   }, [cryptoList, searchTerm]);
 
