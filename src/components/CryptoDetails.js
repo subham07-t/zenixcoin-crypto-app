@@ -19,6 +19,7 @@ import {
 import millify from "millify";
 import HTMLReactParser from "html-react-parser";
 import LineChart from "./LineChart";
+import Loader from "./Loader";
 
 const { Text, Title } = Typography;
 const { Option } = Select;
@@ -33,7 +34,7 @@ const CryptoDetails = () => {
   });
   const cryptoDetails = data?.data?.coin;
 
-  if (isFetching) return "Loading ...";
+  if (isFetching) return <Loader />;
 
   const time = ["3h", "24h", "7d", "30d", "1y", "3m", "3y", "5y"];
 
@@ -51,17 +52,15 @@ const CryptoDetails = () => {
     },
     {
       title: "Market Cap",
-      value: `$ ${
-        cryptoDetails?.marketCap && millify(cryptoDetails?.marketCap)
-      }`,
+      value: `$ ${cryptoDetails?.marketCap && millify(cryptoDetails?.marketCap)
+        }`,
       icon: <DollarCircleOutlined />,
     },
     {
       title: "All-time-high(daily avg.)",
-      value: `$ ${
-        cryptoDetails?.allTimeHigh?.price &&
+      value: `$ ${cryptoDetails?.allTimeHigh?.price &&
         millify(cryptoDetails?.allTimeHigh?.price)
-      }`,
+        }`,
       icon: <TrophyOutlined />,
     },
   ];
@@ -88,17 +87,15 @@ const CryptoDetails = () => {
     },
     {
       title: "Total Supply",
-      value: `$ ${
-        cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)
-      }`,
+      value: `$ ${cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)
+        }`,
       icon: <ExclamationCircleOutlined />,
     },
     {
       title: "Circulating Supply",
-      value: `$ ${
-        cryptoDetails?.supply?.circulating &&
+      value: `$ ${cryptoDetails?.supply?.circulating &&
         millify(cryptoDetails?.supply?.circulating)
-      }`,
+        }`,
       icon: <ExclamationCircleOutlined />,
     },
   ];
