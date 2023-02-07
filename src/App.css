@@ -13,9 +13,9 @@
   box-sizing: border-box;
 }
 
-a:hover {
+/* a:hover {
   color: var(--pink) !important;
-}
+} */
 
 .app {
   display: flex;

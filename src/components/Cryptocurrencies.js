@@ -34,17 +34,23 @@ const Cryptocurrencies = ({ simplified }) => {
 
       <Row gutter={[32, 32]} className="crypto-card-comtainer">
         {cryptos?.map((currency) => (
-          < Col
+          <Col
             xs={24}
             sm={12}
             lg={6}
             key={currency.uuid}
             className="crypto-card"
           >
-            <Link to={`/crypto/${currency.uuid}`}>
+            <Link to={`/cryptocurrencies/${currency.uuid}`}>
               <Card
                 title={`${currency.rank}. ${currency.name}`}
-                extra={<img src={currency.iconUrl} alt="crypto" className="crypto-image" />}
+                extra={
+                  <img
+                    src={currency.iconUrl}
+                    alt="crypto"
+                    className="crypto-image"
+                  />
+                }
                 hoverable
               >
                 <p>Price:{millify(currency.price)}</p>
