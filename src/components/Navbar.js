@@ -52,13 +52,25 @@ const Navbar = ({ pathName }) => {
           defaultSelectedKeys={["/"]}
           selectedKeys={[`/${pathName}`]}
         >
-          <Menu.Item key="/" icon={<HomeOutlined />}>
+          <Menu.Item
+            key="/"
+            icon={<HomeOutlined />}
+            onClick={() => setActiveMenu(!activeMenu)}
+          >
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item key="/cryptocurrencies" icon={<FundOutlined />}>
+          <Menu.Item
+            key="/cryptocurrencies"
+            icon={<FundOutlined />}
+            onClick={() => setActiveMenu(!activeMenu)}
+          >
             <Link to="/cryptocurrencies">Cryptocurrencies</Link>
           </Menu.Item>
-          <Menu.Item key="/news" icon={<BulbOutlined />}>
+          <Menu.Item
+            key="/news"
+            icon={<BulbOutlined />}
+            onClick={() => setActiveMenu(!activeMenu)}
+          >
             <Link to="/news">News</Link>
           </Menu.Item>
         </Menu>
