@@ -44,7 +44,7 @@ const App = () => {
               level={5}
               style={{ color: "white", textAlign: "center" }}
             >
-              Cryptoapp <br />
+              ZenixCoin <br />
               All rights reserved
             </Typography.Title>
             <Space>
