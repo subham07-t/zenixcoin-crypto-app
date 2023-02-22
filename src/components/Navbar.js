@@ -8,7 +8,7 @@ import {
   FundOutlined,
   MenuOutlined,
 } from "@ant-design/icons";
-import icon from "../images/cryptocurrency.png";
+import icon from "../images/cryptocurrency-logo.png";
 
 const Navbar = ({ pathName }) => {
   const [activeMenu, setActiveMenu] = useState(false);
@@ -37,7 +37,7 @@ const Navbar = ({ pathName }) => {
       <div className="logo-container">
         <Avatar src={icon} size="large" />
         <Typography.Title level={2} className="logo">
-          <Link to="/">CryptoApp</Link>
+          <Link to="/">ZenixCoin</Link>
         </Typography.Title>
         <Button
           className="menu-control-container"
@@ -52,25 +52,13 @@ const Navbar = ({ pathName }) => {
           defaultSelectedKeys={["/"]}
           selectedKeys={[`/${pathName}`]}
         >
-          <Menu.Item
-            key="/"
-            icon={<HomeOutlined />}
-            onClick={() => setActiveMenu(!activeMenu)}
-          >
+          <Menu.Item key="/" icon={<HomeOutlined />}>
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item
-            key="/cryptocurrencies"
-            icon={<FundOutlined />}
-            onClick={() => setActiveMenu(!activeMenu)}
-          >
+          <Menu.Item key="/cryptocurrencies" icon={<FundOutlined />}>
             <Link to="/cryptocurrencies">Cryptocurrencies</Link>
           </Menu.Item>
-          <Menu.Item
-            key="/news"
-            icon={<BulbOutlined />}
-            onClick={() => setActiveMenu(!activeMenu)}
-          >
+          <Menu.Item key="/news" icon={<BulbOutlined />}>
             <Link to="/news">News</Link>
           </Menu.Item>
         </Menu>
