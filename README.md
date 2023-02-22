@@ -4,7 +4,7 @@
 It's a project about global cryptocurency details & latest news about cryptocurency.
 
 
-### ✨ [Demo](crypto-app-two-omega.vercel.app)
+### ✨ [Demo](https://crypto-app-two-omega.vercel.app/)
 
 
 ## Run Locally
