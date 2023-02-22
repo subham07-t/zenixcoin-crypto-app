@@ -1,35 +1,57 @@
-<h1 align="center">Welcome to ZenixCoin 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
-</p>
 
->  
+# Welcome to ZenixCoin 👋
+
+It's a project about global cryptocurency details & latest news about cryptocurency.
+
 
 ### ✨ [Demo](crypto-app-two-omega.vercel.app)
 
-## Install
+
+## Run Locally
+
+Clone the project
 
 ```sh
-npm install
+  git clone https://github.com/subham07-t/crypto_App.git
 ```
 
-## Usage
+Go to the project directory
 
 ```sh
-npm run start
+  cd my-project
 ```
+
+Install dependencies
+
+```sh
+  npm install
+```
+
+Start the server
+
+```sh
+  npm run start
+```
+
+
+## Tools used
+
+- React
+- Redux-Toolkit
+- Chart.js
+
+   
+## Lessons Learned
+
+- How to use redux-toolkit
+- How to use chart.js
+- How to use rapid api with redux-toolkit
+
 
 ## Author
 
 👤 ** Subham haldar  **
 
-* Website: https://www.linkedin.com/in/subham-haldar-a83672213/
 * Github: [@Subham07-t   ](https://github.com/Subham07-t   )
-* LinkedIn: [@ subham-haldar-a8367221](https://linkedin.com/in/ subham-haldar-a8367221)
+* LinkedIn: https://linkedin.com/in/subham-haldar-a8367221
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
