@@ -18,7 +18,7 @@ Clone the project
 Go to the project directory
 
 ```sh
-  cd my-project
+  cd crypto-app
 ```
 
 Install dependencies
@@ -40,12 +40,18 @@ Start the server
 - Redux-Toolkit
 - Chart.js
 
-   
+## Features
+
+- Global cryptocurrency statistics such as total market capitalization, total exchanges, and so on. 
+- The most recent cryptocurrency news from the last 24 hours 
+- Each cryptocurrency's price chart, which can be filtered for the last 7h,3d,5y etc.
+- Cryptocurrency search option included. 
+  
 ## Lessons Learned
 
-- How to use redux-toolkit
+- How to use the Redux-Toolkit
 - How to use chart.js
-- How to use rapid api with redux-toolkit
+- How to use the Rapid API with the Redux-Toolkit
 
 
 ## Author
