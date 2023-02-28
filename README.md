@@ -1,7 +1,7 @@
 
 # Welcome to ZenixCoin 👋
 
-It's a project about global cryptocurency details & latest news about cryptocurency.
+It's a project about global cryptocurrency details and the latest news about cryptocurrency.
 
 
 ### ✨ [Demo](https://crypto-app-two-omega.vercel.app/)
