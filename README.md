@@ -30,7 +30,7 @@ Install dependencies
 Start the server
 
 ```sh
-  npm run start
+  npm start
 ```
 
 
