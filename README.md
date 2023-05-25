@@ -1,7 +1,7 @@
 
 # Welcome to ZenixCoin 👋
 
-It's a project about global cryptocurrency details and the latest news about cryptocurrency.
+ZenixCoin is a cutting-edge platform that provides you with real-time global cryptocurrency statistics, up-to-date news, customizable price charts, and a user-friendly search feature. Stay informed, make informed decisions, and unlock the potential of the ever-evolving world of cryptocurrencies.
 
 
 ### ✨ [Demo](https://crypto-app-two-omega.vercel.app/)
