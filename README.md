@@ -12,7 +12,7 @@ It's a project about global cryptocurrency details and the latest news about cry
 Clone the project
 
 ```sh
-  git clone https://github.com/subham07-t/crypto_App.git
+  git@github.com:subham07-t/zenixcoin-crypto-app.git
 ```
 
 Go to the project directory
@@ -38,6 +38,7 @@ Start the server
 
 - React
 - Redux-Toolkit
+- RTK-Query
 - Chart.js
 
 ## Features
@@ -51,7 +52,7 @@ Start the server
 
 - How to use the Redux-Toolkit
 - How to use chart.js
-- How to use the Rapid API with the Redux-Toolkit
+- How to use the Rapid API and RTK-Query  
 
 
 ## Author
