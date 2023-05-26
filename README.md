@@ -16,7 +16,7 @@ Discover ZenixCoin today and unlock the full potential of the global cryptocurre
 Clone the project
 
 ```sh
-  git@github.com:subham07-t/zenixcoin-crypto-app.git
+  https://github.com/subham07-t/zenixcoin-crypto-app.git
 ```
 
 Go to the project directory
