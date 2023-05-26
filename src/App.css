@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 :root {
   --text-primary: #000;
@@ -14,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* a:hover {
@@ -47,8 +46,7 @@
   margin-bottom: 1.5rem;
   /* background-image: linear-gradient(to bottom, #ffffff, #e9f6ff);
    */
-  background-color: #D1E9FC;
-
+  background-color: #d1e9fc;
 }
 
 .stat-card .ant-statistic-title {
@@ -60,7 +58,7 @@
 .stat-card span {
   font-weight: 700;
   font-size: 2rem;
-  color: #061B64;
+  color: #061b64;
 }
 
 @media screen and (max-width: 375px) {
@@ -92,7 +90,7 @@
   .stat-card span {
     font-weight: 700;
     font-size: 1.5rem;
-    color: #061B64;
+    color: #061b64;
   }
 }
 
@@ -115,6 +113,12 @@
   padding: 20px;
   align-items: center;
   width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .logo-container h2 {
+    font-size: 1.7rem;
+  }
 }
 
 .logo {
@@ -429,11 +433,10 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
-
 }
 
 .home-heading-container h2 {
-  font-weight: 700
+  font-weight: 700;
 }
 
 .show-more {

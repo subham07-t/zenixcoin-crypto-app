@@ -32,6 +32,48 @@ const Navbar = ({ pathName }) => {
     }
   }, [screenSize]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (screenSize < 768) {
+        setActiveMenu(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [screenSize]);
+
+  const toggleMenu = () => {
+    setActiveMenu(!activeMenu);
+  };
+
+  const handleLinkClick = () => {
+    if (screenSize < 768) {
+      setActiveMenu(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        !event.target.closest(".menu-control-container") &&
+        !event.target.closest(".ant-menu") &&
+        screenSize < 768
+      ) {
+        setActiveMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [screenSize]);
+
   return (
     <div className="nav-container">
       <div className="logo-container">
@@ -39,10 +81,7 @@ const Navbar = ({ pathName }) => {
         <Typography.Title level={2} className="logo">
           <Link to="/">ZenixCoin</Link>
         </Typography.Title>
-        <Button
-          className="menu-control-container"
-          onClick={() => setActiveMenu(!activeMenu)}
-        >
+        <Button className="menu-control-container" onClick={toggleMenu}>
           <MenuOutlined />
         </Button>
       </div>
@@ -53,13 +92,19 @@ const Navbar = ({ pathName }) => {
           selectedKeys={[`/${pathName}`]}
         >
           <Menu.Item key="/" icon={<HomeOutlined />}>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={handleLinkClick}>
+              Home
+            </Link>
           </Menu.Item>
           <Menu.Item key="/cryptocurrencies" icon={<FundOutlined />}>
-            <Link to="/cryptocurrencies">Cryptocurrencies</Link>
+            <Link to="/cryptocurrencies" onClick={handleLinkClick}>
+              Cryptocurrencies
+            </Link>
           </Menu.Item>
           <Menu.Item key="/news" icon={<BulbOutlined />}>
-            <Link to="/news">News</Link>
+            <Link to="/news" onClick={handleLinkClick}>
+              News
+            </Link>
           </Menu.Item>
         </Menu>
       )}
