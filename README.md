@@ -8,7 +8,7 @@ ZenixCoin is a cutting-edge platform that provides you with real-time global cry
 Discover ZenixCoin today and unlock the full potential of the global cryptocurrency market!
 
 
-### ✨ [Demo](https://crypto-app-two-omega.vercel.app/)
+### ✨ [Demo](https://zenixcoin.vercel.app/)
 
 
 ## Run Locally
