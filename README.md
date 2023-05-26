@@ -22,7 +22,7 @@ Clone the project
 Go to the project directory
 
 ```sh
-  cd crypto-app
+  cd zenixcoin-crypto-app
 ```
 
 Install dependencies
