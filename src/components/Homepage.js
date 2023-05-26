@@ -5,6 +5,7 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 import millify from "millify";
 import { Cryptocurrencies, News } from "../components";
 import Loader from "./Loader";
+import GoToTop from "../goToTop";
 
 const { Title } = Typography;
 const Homepage = () => {
@@ -18,33 +19,38 @@ const Homepage = () => {
       <Title level={2} className="heading">
         Global Crypto Stats
       </Title>
-      <Row>
-        <Col span={12}>
+      <Row gutter={18}>
+        <Col span={6}>
           <Statistic
+            className="stat-card"
             title="Total Cryptocurrencies"
             value={globalStats.totalCoins}
           />
         </Col>
-        <Col span={12}>
+        <Col span={6}>
           <Statistic
+            className="stat-card"
             title="Total Exchanges"
             value={millify(globalStats.totalExchanges)}
           />
         </Col>
-        <Col span={12}>
+        <Col span={6}>
           <Statistic
+            className="stat-card"
             title="Total Market Cap"
             value={millify(globalStats.totalMarketCap)}
           />
         </Col>
-        <Col span={12}>
+        <Col span={6}>
           <Statistic
+            className="stat-card"
             title="Total 24h Volume"
             value={millify(globalStats.total24hVolume)}
           />
         </Col>
-        <Col span={12}>
+        <Col span={6}>
           <Statistic
+            className="stat-card"
             title="Total Markets"
             value={millify(globalStats.totalMarkets)}
           />
@@ -61,13 +67,14 @@ const Homepage = () => {
       <Cryptocurrencies simplified={true} />
       <div className="home-heading-container">
         <Title level={2} className="home-title">
-          Latest Crypto News
+          Latest Crypto News :
         </Title>
         <Title level={3} className="show-more">
           <Link to={"/news"}>Show More</Link>
         </Title>
       </div>
       <News simplified={true} />
+      <GoToTop />
     </>
   );
 };

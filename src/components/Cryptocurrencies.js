@@ -7,7 +7,7 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 import Loader from "./Loader";
 
 
-const CryptocurrenciesComponent = ({ currency }) => {
+const CryptoCard = ({ currency }) => {
   return (
     <Col
       xs={24}
@@ -88,7 +88,7 @@ const Cryptocurrencies = ({ simplified }) => {
       </Title>)}
 
       <Row gutter={[32, 32]} className="crypto-card-container">
-        {!cryptos ? cryptoList?.data?.coins?.map((currency, i) => <CryptocurrenciesComponent currency={currency} key={i} />) : cryptos?.map((currency, i) => <CryptocurrenciesComponent currency={currency} key={i} />)}
+        {!cryptos ? cryptoList?.data?.coins?.map((currency, i) => <CryptoCard currency={currency} key={i} />) : cryptos?.map((currency, i) => <CryptoCard currency={currency} key={i} />)}
       </Row>
 
 
