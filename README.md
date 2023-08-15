@@ -1,5 +1,6 @@
 
 # Welcome to ZenixCoin 👋
+![Zenixcoin By Subham Haldar](https://github.com/subham07-t/zenixcoin-crypto-app/assets/82716446/ed1ba182-4803-4d5b-8264-fd422e477c07)
 
 Your Comprehensive Cryptocurrency Companion.
 
