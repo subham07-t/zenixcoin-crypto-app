@@ -65,5 +65,5 @@ Start the server
 👤 ** Subham haldar  **
 
 * Github: [@Subham07-t   ](https://github.com/Subham07-t   )
-* LinkedIn: https://linkedin.com/in/subham-haldar-a8367221
+* LinkedIn: https://linkedin.com/in/subham-haldar
 
