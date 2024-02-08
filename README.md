@@ -41,18 +41,17 @@ Start the server
 
 ## Tools used
 
-- **React**
-- **Ant design**
-- **Redux-Toolkit**
-- **RTK-Query**
-- **Chart.js**
-- **Rapid Api**
+- **Library:** [React](https://react.dev/)
+- **Styling:** [Ant design](https://ant.design/)
+- **State Management:** [Redux-Toolkit](https://redux-toolkit.js.org/)
+- **Data Fetching:** [RTK-Query](https://redux-toolkit.js.org/rtk-query/overview)
+
 
 ## Features
 
-- [x] Global cryptocurrency statistics such as total market capitalization, total exchanges, and so on.
-- [x] The most recent cryptocurrency news from the last 24 hours
-- [x] Each cryptocurrency's price chart, which can be filtered for the last 7h,3d,5y etc.
+- [x] Get global cryptocurrency statistics such as total market capitalization, total exchanges, and so on using **Rapid API**.
+- [x] The most recent cryptocurrency news from the last 24 hours.
+- [x] Each cryptocurrency's price chart, which can be filtered for the last 7h,3d,5y etc using **chart js**.
 - [x] Cryptocurrency search option included. 
   
 
