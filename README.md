@@ -42,6 +42,7 @@ Start the server
 ## Tools used
 
 - **React**
+- **Ant design**
 - **Redux-Toolkit**
 - **RTK-Query**
 - **Chart.js**
